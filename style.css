@@ -1,0 +1,42 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(55, 97, 121, 0.5);
+    background-image: url('./image/sunflowers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.clock-app span {
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    color: white;
+    top: -150px;
+}
+
+.clock-app span::after {
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#hour::after{
+      content: 'Hour';
+}
+
+#minute::after{
+    content: 'Minute';
+}
+
+#second::after{
+    content: 'Second';
+}
